@@ -1,0 +1,29 @@
+Test Case 1: Simple case with direct path through shop
+3 2
+2 4 3
+0 0 0
+Expected: 2 (2->4->3)
+
+Test Case 2: No shops available
+3 2
+2 0 3
+0 0 0
+Expected: -1
+
+Test Case 3: Start is already at shop
+3 2
+4 2 3
+0 0 0
+Expected: 2 (4->2->3)
+
+Test Case 4: Shop at home
+3 2
+2 0 4
+0 0 0
+Expected: 2 (2->0->4 which is home)
+
+Test Case 5: Multiple shops, choose optimal
+5 2
+2 0 4 0 3
+0 1 0 1 0
+Expected: 4 (2->0->4->0->3)
